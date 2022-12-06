@@ -1,5 +1,7 @@
 import 'package:find_flames/body/body.dart';
+import 'package:find_flames/bottomnav.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,27 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        backgroundColor: const Color(0xfffff6fa),
-        appBar: AppBar(
-          title: const Text(
-            "Puzzles",
-            style: TextStyle(color: Color(0xffff5f8f)),
-          ),
-          leading: Image.asset('assets/leading.png'),
-          backgroundColor: const Color(0xfffff6fa),
-          elevation: 0,
-          centerTitle: true,
-          actions: [
-            Image.asset(
-              'assets/setting.png',
-              height: 50,
-              width: 50,
-            )
-          ],
-          toolbarHeight: 80,
-        ),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: GoogleFonts.nunito().fontFamily),
+      home: const Scaffold(
+        backgroundColor: Color(0xfffff6fa),
         body: AppBody(),
+        bottomNavigationBar: BottomNav(),
       ),
     );
   }

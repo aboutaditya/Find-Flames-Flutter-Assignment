@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RowTotal extends StatelessWidget {
   const RowTotal({super.key});
@@ -7,7 +8,7 @@ class RowTotal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(12)),
-      height: 110,
+      height: 115,
       width: 85,
       child: Stack(
         alignment: Alignment.center,
@@ -27,16 +28,15 @@ class RowTotal extends StatelessWidget {
                   size: 30,
                 ),
               ),
-              const Padding(
+               Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: Text(
                   '20',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                  style: GoogleFonts.nunito(color: Colors.white, fontWeight: FontWeight.bold,),
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 18),
+                padding: const EdgeInsets.only(top: 16),
                 child: Container(
                   height: 16,
                   width: 66,
@@ -52,7 +52,7 @@ class RowTotal extends StatelessWidget {
                           style: TextStyle(
                               color: Colors.black,
                               fontSize: 12,
-                              fontFamily: 'nunito'),
+                              ),
                         ),
                       ],
                     ),
