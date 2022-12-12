@@ -12,9 +12,7 @@ class AppBody extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SizedBox(
-          height: 62,
-        ),
+        SafeArea(child: SizedBox()),
         CustomBar(),
         Stack(children: [
           Padding(
