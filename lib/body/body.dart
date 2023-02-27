@@ -25,7 +25,7 @@ class AppBody extends StatelessWidget {
                     topRight: Radius.circular(12)),
                 color: Colors.white,
               ),
-              height: 403,
+              height: 425,
             ),
           ),
           bodyData()
